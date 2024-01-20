@@ -1,4 +1,4 @@
-# Project Name
+# Natours
 
 ## Description
 
@@ -19,7 +19,7 @@ This is a Node.js project built with Express and MongoDB, utilizing Mongoose for
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/Natours.git
+   git clone https://github.com/aryanak-18/Natours.git
    ```
 
 2. Navigate to the project directory:
@@ -34,15 +34,6 @@ This is a Node.js project built with Express and MongoDB, utilizing Mongoose for
    npm install
    ```
 
-4. Set up the MongoDB database and update the connection string in `config.js`:
-
-   ```javascript
-   // config.js
-   module.exports = {
-     // ...
-     mongodbUri: 'your-mongodb-connection-string',
-     // ...
-   };
    ```
 
 ## Usage
@@ -62,7 +53,7 @@ This is a Node.js project built with Express and MongoDB, utilizing Mongoose for
 ├── controllers          # Route handlers/controllers
 ├── models               # Mongoose models
 ├── routes               # Express route definitions
-├── middleware           # Custom middleware functions
+├── utils                # Utility functions
 ├── server.js            # Entry point for the application
 ├── .gitignore           # Git ignore file
 ├── package.json         # Node.js package file
