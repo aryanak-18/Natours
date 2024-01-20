@@ -34,8 +34,6 @@ This is a Node.js project built with Express and MongoDB, utilizing Mongoose for
    npm install
    ```
 
-   ```
-
 ## Usage
 
 1. Start the application:
