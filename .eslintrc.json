@@ -29,5 +29,8 @@
       "warn",
       { "argsIgnorePattern": "req|res|next|val|con" }
     ]
-  }
+  },
+    "parserOptions": {
+        "sourceType": "module"
+    }
 }
