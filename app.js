@@ -43,7 +43,7 @@ app.use(
         defaultSrc: ["'self'"],
         connectSrc: [
           "'self'",
-          'http://127.0.0.1:3000',
+          'http://natours-aryan-kumar.vercel.app',
           'ws://127.0.0.1:49259/',
         ],
       },
