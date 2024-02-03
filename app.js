@@ -23,7 +23,7 @@ app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
 //1) Global Middlewares
-// app.use(cors());
+app.use(cors());
 // const corsOptions = {
 //   origin: true, //included origin as true
 //   credentials: true, //included credentials as true
