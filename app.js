@@ -45,6 +45,7 @@ app.use(
           "'self'",
           'http://127.0.0.1:3000',
           'ws://127.0.0.1:49259/',
+          'wss://natours-cye6.onrender.com:49259/',
         ],
       },
     },
