@@ -44,6 +44,9 @@ This is a Node.js project built with Express and MongoDB, utilizing Mongoose for
 
 2. Open your web browser and go to [http://localhost:3000](http://localhost:3000) to access the application.
 
+3. Dummy username: laura@example.com
+   Dummy password: test1234
+
 ## Folder Structure
 
 ```plaintext
