@@ -8,7 +8,7 @@ export const login = async (email, password) => {
   try {
     const res = await axios({
       method: 'POST',
-      url: '/login',
+      url: 'https://natours-cye6.onrender.com/login',
       //   url: 'http://localhost:3000/api/v1/users/login',
       data: {
         email,
