@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
-const helmet = require('helmet');
+// const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
@@ -36,21 +36,21 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Set Security HTTP Headers
 // app.use(helmet());
 
-app.use(
-  helmet({
-    contentSecurityPolicy: {
-      directives: {
-        defaultSrc: ["'self'"],
-        connectSrc: [
-          "'self'",
-          'http://127.0.0.1:3000',
-          'ws://127.0.0.1:49259/',
-          'wss://natours-cye6.onrender.com:49259/',
-        ],
-      },
-    },
-  }),
-);
+// app.use(
+//   helmet({
+//     contentSecurityPolicy: {
+//       directives: {
+//         defaultSrc: ["'self'"],
+//         connectSrc: [
+//           "'self'",
+//           'http://127.0.0.1:3000',
+//           'ws://127.0.0.1:49259',
+//           'ws://127.0.0.1:53383/',
+//         ],
+//       },
+//     },
+//   }),
+// );
 
 //Development Logging
 console.log('app.js-10: ', process.env.NODE_ENV);
@@ -109,10 +109,11 @@ app.use((req, res, next) => {
 
 app.use('/', viewRouter);
 app.use('/api/v1/tours', tourRouter);
-app.use('https://natours-cye6.onrender.com/users', userRouter);
+app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);
 
 app.all('*', (req, res, next) => {
+  // console.log(req);
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
 });
 
