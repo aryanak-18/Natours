@@ -33,6 +33,7 @@ This is a Node.js project built with Express and MongoDB, utilizing Mongoose for
    ```bash
    npm install
    ```
+4. Create ```config.env``` with the environment variables as mentioned in ```.env.example```.
 
 ## Usage
 
@@ -44,8 +45,8 @@ This is a Node.js project built with Express and MongoDB, utilizing Mongoose for
 
 2. Open your web browser and go to [http://localhost:3000](http://localhost:3000) to access the application.
 
-3. Dummy username: laura@example.com
-   Dummy password: test1234
+3. **Dummy username**: ```laura@example.com``` <br/>
+   **Dummy password**: ```test1234```
 
 ## Folder Structure
 
@@ -61,3 +62,5 @@ This is a Node.js project built with Express and MongoDB, utilizing Mongoose for
 ├── README.md            # Project readme file
 └── ...                  # Other project files and directories
 ```
+<br/>
+---
